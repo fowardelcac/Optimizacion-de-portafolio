@@ -11,7 +11,7 @@ def calculos_(weights: list):
   return np.array([ret, vol, sr])
 
 def neg_s(weights: list) -> np.array:
-  return calculos_(weights)[2] - 1
+  return calculos_(weights)[2] * (-1)
 
 def get_vol(weights: list)-> np.array:
   return calculos_(weights)[1]
